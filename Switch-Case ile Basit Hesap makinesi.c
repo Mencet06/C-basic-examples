@@ -3,16 +3,16 @@
 
 int main()
 {
-  int num1,num2;
+  float num1,num2;
   float bolum;
   int sonuc;
   int secim;
 
   
   printf("Lutfen bir sayi giriniz:");
-    scanf("%d",&num1);
+    scanf("%f",&num1);
   printf("Lutfen bir sayi giriniz:");
-    scanf("%d",&num2);
+    scanf("%f",&num2);
   printf(" 1-Toplama \n 2-Cikarma \n 3-Carpma \n 4-Bolme \n");
     scanf("%d",&secim);
   switch(secim)
@@ -32,9 +32,11 @@ int main()
       case 4: 
             bolum=num1/num2;
             printf("Sonucunuz : %.2f ",bolum);
-      
+            break;
+
+
        default: 
-       printf("Gecerli islem secenegini secmediniz!\n");
+       printf("Gecerli islem seceneginiz secmediniz!\n");
        break;
 
 
